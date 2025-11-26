@@ -3,9 +3,9 @@ import { v } from "convex/values";
 
 export default defineSchema({
     audits: defineTable({
-        userId: v.string(),       // Clerk User ID
+        userId: v.string(),       // Clerk Subject ID
         url: v.string(),
-        mobileAdDensity: v.number(), // 0-100
+        mobileAdDensity: v.number(),
         hasSchema: v.boolean(),
         status: v.string(),       // "success" | "failed"
         timestamp: v.number(),
